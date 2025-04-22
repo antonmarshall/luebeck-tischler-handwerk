@@ -1,65 +1,47 @@
-
-import { Award, Calendar, Users } from 'lucide-react';
+import aboutImage from "@/assets/about-craftsman.jpg";
 
 const About = () => {
-  const highlights = [
-    {
-      icon: <Calendar className="w-8 h-8 text-[#6B8E23]" />,
-      title: "Seit 1995",
-      description: "Über 25 Jahre Erfahrung in der Holzverarbeitung"
-    },
-    {
-      icon: <Award className="w-8 h-8 text-[#6B8E23]" />,
-      title: "Meisterbetrieb",
-      description: "Handwerkskunst mit Tradition und hohen Qualitätsansprüchen"
-    },
-    {
-      icon: <Users className="w-8 h-8 text-[#6B8E23]" />,
-      title: "Lokales Team",
-      description: "Ausgebildete Fachkräfte aus der Region Lübeck"
-    }
-  ];
-
   return (
-    <section id="about" className="py-20 relative overflow-hidden">
-      {/* Wood pattern background */}
-      <div className="absolute inset-0 bg-wood-pattern opacity-5"></div>
-      
-      <div className="container mx-auto px-4 relative">
-        <div className="flex flex-col lg:flex-row items-center gap-12">
-          {/* Image */}
-          <div className="lg:w-1/2">
-            <div className="relative">
-              {/* Main image */}
-              <img 
-                src="https://images.unsplash.com/photo-1581091012184-7e0cdfbb6797?q=80&w=1470&auto=format&fit=crop" 
-                alt="Tischlermeister in der Werkstatt" 
-                className="rounded-lg shadow-xl w-full max-w-lg mx-auto"
-              />
-              {/* Decorative element */}
-              <div className="absolute -bottom-5 -right-5 w-2/3 h-24 bg-green-light rounded-lg -z-10"></div>
-            </div>
+    <section id="about" className="py-16 bg-white">
+      <div className="container mx-auto px-4">
+        <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div className="relative">
+            <img
+              src={aboutImage}
+              alt="Erfahrener Tischlermeister bei der traditionellen Handarbeit"
+              className="rounded-lg shadow-xl w-full h-auto object-cover"
+            />
+            <div className="absolute -bottom-4 -right-4 bg-primary/10 w-full h-full rounded-lg -z-10"></div>
           </div>
-
-          {/* Content */}
-          <div className="lg:w-1/2">
-            <h2 className="section-title">Über Uns</h2>
-            <p className="text-lg mb-6">
-              Als traditioneller Tischlermeisterbetrieb in Lübeck verbinden wir klassisches Handwerk mit modernen Fertigungsmethoden. Seit über 25 Jahren gestalten, fertigen und montieren wir hochwertige Möbel und Einrichtungslösungen für Privatkunden und gewerbliche Auftraggeber.
-            </p>
-            <p className="text-lg mb-8">
-              Unser Meister Thomas Weber führt den Betrieb in zweiter Generation und legt besonderen Wert auf nachhaltige Materialien, präzise Verarbeitung und eine persönliche Kundenbetreuung vom ersten Entwurf bis zur finalen Montage.
-            </p>
-
-            {/* Highlights */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
-              {highlights.map((item, index) => (
-                <div key={index} className="text-center p-4">
-                  <div className="mx-auto mb-3">{item.icon}</div>
-                  <h3 className="font-bold text-lg mb-1">{item.title}</h3>
-                  <p className="text-sm text-gray-600">{item.description}</p>
-                </div>
-              ))}
+          
+          <div className="space-y-6">
+            <h2 className="text-4xl font-bold text-gray-800">Über uns</h2>
+            <div className="space-y-4">
+              <p className="text-lg text-gray-600">
+                Seit über 25 Jahren steht unsere Tischlerei für traditionelles Handwerk und moderne Präzision. 
+                Als familiengeführter Betrieb in Lübeck verbinden wir altbewährte Handwerkstechniken mit 
+                zeitgemäßer Technologie.
+              </p>
+              <p className="text-lg text-gray-600">
+                Unser erfahrenes Team aus Meistern und Gesellen arbeitet mit Leidenschaft 
+                und höchster Sorgfalt an jedem Projekt - ob klassische Möbelstücke, 
+                moderne Einbauten oder anspruchsvolle Restaurierungen.
+              </p>
+              <p className="text-lg text-gray-600">
+                Was uns auszeichnet ist die persönliche Beratung und individuelle Betreuung 
+                unserer Kunden von der ersten Idee bis zur finalen Umsetzung.
+              </p>
+            </div>
+            
+            <div className="grid grid-cols-2 gap-6 mt-8">
+              <div>
+                <h3 className="text-2xl font-bold text-gray-800">25+</h3>
+                <p className="text-gray-600">Jahre Erfahrung</p>
+              </div>
+              <div>
+                <h3 className="text-2xl font-bold text-gray-800">100%</h3>
+                <p className="text-gray-600">Kundenzufriedenheit</p>
+              </div>
             </div>
           </div>
         </div>
