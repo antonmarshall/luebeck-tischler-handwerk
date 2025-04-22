@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -70,7 +71,7 @@ export default {
 				},
 				green: {
 					light: '#F2FCE2',
-					DEFAULT: '#6B8E23',
+					DEFAULT: '#6B8E23',  // This defines the green-DEFAULT color
 					dark: '#556B2F'
 				}
 			},
