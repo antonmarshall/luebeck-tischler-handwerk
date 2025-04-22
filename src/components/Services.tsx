@@ -1,8 +1,9 @@
 
-import { Tool, Home, Sofa, Kitchen, Archive, Construction } from 'lucide-react';
+import { Wrench, Home, Sofa, ChefHat, Archive, Construction } from 'lucide-react';
 
 const Services = () => {
   const services = [
+    // Replace 'Tool' with 'Wrench'
     {
       title: "Maßgefertigte Möbel",
       description: "Individuelle Möbelstücke nach Ihren Wünschen und Maßen – vom Einzelstück bis zum kompletten Ensemble.",
@@ -21,12 +22,14 @@ const Services = () => {
     {
       title: "Küchen",
       description: "Funktionale und ästhetische Küchenkonzepte nach Maß, individuell auf Ihre Bedürfnisse zugeschnitten.",
-      icon: <Kitchen className="w-10 h-10 text-green-DEFAULT" />
+      // Replace 'Kitchen' with 'ChefHat'
+      icon: <ChefHat className="w-10 h-10 text-green-DEFAULT" />
     },
     {
       title: "Restauration",
       description: "Fachgerechte Aufarbeitung und Wiederherstellung von historischen und antiken Möbelstücken.",
-      icon: <Tool className="w-10 h-10 text-green-DEFAULT" />
+      // Replace 'Tool' with 'Wrench'
+      icon: <Wrench className="w-10 h-10 text-green-DEFAULT" />
     },
     {
       title: "Objekteinrichtungen",
@@ -64,3 +67,4 @@ const Services = () => {
 };
 
 export default Services;
+

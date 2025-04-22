@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -105,7 +104,7 @@ export default {
 				'scale-in': 'scale-in 0.2s ease-out'
 			},
 			backgroundImage: {
-				'wood-pattern': "url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1MCIgaGVpZ2h0PSI1MCIgdmlld0JveD0iMCAwIDUwIDUwIiBvcGFjaXR5PSIwLjA1Ij48cGF0aCBkPSJNMSwxIHY0OCBoNDggdi00OCBoLTQ4IHoiIHN0cm9rZT0iIzdENUE1MCIgc3Ryb2tlLXdpZHRoPSIwLjUiIGZpbGw9Im5vbmUiPjwvcGF0aD48cGF0aCBkPSJNOCw4IHMxNSwwIDE1LDEwIGMwLDEwIC0xNSwxMCAtMTUsMjAgczE1LDEwIDE1LDEwIiBzdHJva2U9IiM3RDVBNTAiIHN0cm9rZS13aWR0aD0iMC41IiBmaWxsPSJub25lIj48L3BhdGg+PC9zdmc+')"
+				'wood-pattern': "url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1MCIgaGVpZ2h0PSI1MCIgdmlld0JveD0iMCAwIDUwIDUwIiBvcGFjaXR5PSIwLjA1Ij48cGF0aCBkPSJNMSwxIHY0OCBoNDggaC00OCB2LTQ4IHoiIHN0cm9rZT0iIzdENUE1MCIgc3Ryb2tlLXdpZHRoPSIwLjUiIGZpbGw9Im5vbmUiPjwvcGF0aD48cGF0aCBkPSJNOCw4IHMxNSwwIDE1LDEwIGMwLDEwIC0xNSwxMCAtMTUsMjAgczE1LDEwIDE1LDEwIiBzdHJva2U9IiM3RDVBNTAiIHN0cm9rZS13aWR0aD0iMC41IiBmaWxsPSJub25lIj48L3BhdGg+PC9zdmc+')"
 			}
 		}
 	},
