@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -70,7 +71,7 @@ export default {
                 },
                 green: {
                     light: '#F2FCE2',
-                    DEFAULT: '#6B8E23',  // This defines the green-DEFAULT color
+                    DEFAULT: '#6B8E23',  // Make sure this is defined
                     dark: '#556B2F'
                 }
             },
@@ -110,7 +111,10 @@ export default {
     },
     safelist: [
         { pattern: /^bg-green-/, variants: ['hover', 'focus'] },
-        { pattern: /^text-green-/, variants: ['hover', 'focus'] }
+        { pattern: /^text-green-/, variants: ['hover', 'focus'] },
+        'bg-green-DEFAULT',  // Add explicit safelisting for bg-green-DEFAULT
+        'text-green-DEFAULT',  // Add explicit safelisting for text-green-DEFAULT
+        'ring-green-DEFAULT'  // Add explicit safelisting for ring-green-DEFAULT
     ],
     plugins: [require("tailwindcss-animate")],
 } satisfies Config;
