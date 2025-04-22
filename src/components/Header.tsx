@@ -45,7 +45,7 @@ const Header = () => {
         <div className="container mx-auto flex justify-between items-center">
           {/* Logo */}
           <Link to="/" className="text-wood-dark font-bold text-2xl flex items-center">
-            <span className="text-green-DEFAULT mr-1">Tischler</span>Handwerk
+            <span className="text-[#6B8E23] mr-1">Tischler</span>Handwerk
           </Link>
 
           {/* Desktop Navigation */}
@@ -54,7 +54,7 @@ const Header = () => {
               <a 
                 key={item.name}
                 href={item.href}
-                className="text-wood-dark hover:text-green-DEFAULT transition-colors duration-300 px-2 py-1 font-medium"
+                className="text-wood-dark hover:text-[#6B8E23] transition-colors duration-300 px-2 py-1 font-medium"
               >
                 {item.name}
               </a>
@@ -80,7 +80,7 @@ const Header = () => {
                 <a
                   key={item.name}
                   href={item.href}
-                  className="text-wood-dark hover:text-green-DEFAULT py-2 font-medium border-b border-wood-light last:border-b-0"
+                  className="text-wood-dark hover:text-[#6B8E23] py-2 font-medium border-b border-wood-light last:border-b-0"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   {item.name}

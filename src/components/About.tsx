@@ -4,17 +4,17 @@ import { Award, Calendar, Users } from 'lucide-react';
 const About = () => {
   const highlights = [
     {
-      icon: <Calendar className="w-8 h-8 text-green-DEFAULT" />,
+      icon: <Calendar className="w-8 h-8 text-[#6B8E23]" />,
       title: "Seit 1995",
       description: "Über 25 Jahre Erfahrung in der Holzverarbeitung"
     },
     {
-      icon: <Award className="w-8 h-8 text-green-DEFAULT" />,
+      icon: <Award className="w-8 h-8 text-[#6B8E23]" />,
       title: "Meisterbetrieb",
       description: "Handwerkskunst mit Tradition und hohen Qualitätsansprüchen"
     },
     {
-      icon: <Users className="w-8 h-8 text-green-DEFAULT" />,
+      icon: <Users className="w-8 h-8 text-[#6B8E23]" />,
       title: "Lokales Team",
       description: "Ausgebildete Fachkräfte aus der Region Lübeck"
     }
