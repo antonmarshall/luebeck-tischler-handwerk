@@ -118,7 +118,7 @@ const Header = () => {
                 </Button>
               </a>
               <a href="#services">
-                <Button variant="outline" size="lg" className="border-2 border-white text-white hover:bg-white hover:text-foreground">
+                <Button variant="outline" size="lg" className="border-2 border-white text-white hover:bg-white hover:text-gray-900">
                   Unsere Leistungen
                 </Button>
               </a>
