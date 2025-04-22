@@ -1,8 +1,8 @@
-
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Link } from "react-router-dom";
 import { Menu, X } from 'lucide-react';
+import heroImage from "@/assets/images/about-craftsman.jpg";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -94,7 +94,10 @@ const Header = () => {
       {/* Hero Section */}
       <div className="relative pt-24 min-h-screen flex items-center">
         {/* Background image */}
-        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1565766048405-21878209bfdc?q=80&w=1974&auto=format&fit=crop')] bg-cover bg-center">
+        <div 
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ backgroundImage: `url(${heroImage})` }}
+        >
           <div className="absolute inset-0 bg-black bg-opacity-60"></div>
         </div>
 
@@ -102,7 +105,7 @@ const Header = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 py-20">
           <div className="max-w-2xl text-white">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-              Handwerkskunst aus <span className="text-green-light">Lübeck</span>
+              Handwerkskunst aus <span className="text-[#6B8E23]">Lübeck</span>
             </h1>
             <p className="text-xl mb-8 text-gray-100">
               Maßgefertigte Möbel und hochwertige Innenausbauten 
