@@ -1,4 +1,4 @@
-import aboutImage from "@/assets/about-craftsman.jpg";
+import aboutImage from "@/assets/images/about-craftsman.jpg";
 
 const About = () => {
   return (
@@ -9,7 +9,7 @@ const About = () => {
             <img
               src={aboutImage}
               alt="Erfahrener Tischlermeister bei der traditionellen Handarbeit"
-              className="rounded-lg shadow-xl w-full h-auto object-cover"
+              className="rounded-lg shadow-xl w-full h-[500px] object-cover"
             />
             <div className="absolute -bottom-4 -right-4 bg-primary/10 w-full h-full rounded-lg -z-10"></div>
           </div>
