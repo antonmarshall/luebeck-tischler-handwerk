@@ -39,13 +39,13 @@ const Header = () => {
       {/* Navigation */}
       <nav 
         className={`fixed w-full z-50 transition-all duration-300 ${
-          isScrolled ? 'bg-white shadow-md py-2' : 'bg-transparent py-4'
+          isScrolled ? 'bg-background shadow-md py-2' : 'bg-transparent py-4'
         }`}
       >
         <div className="container mx-auto flex justify-between items-center">
           {/* Logo */}
-          <Link to="/" className="text-wood-dark font-bold text-2xl flex items-center">
-            <span className="text-[#6B8E23] mr-1">Tischler</span>Handwerk
+          <Link to="/" className="text-foreground font-bold text-2xl flex items-center">
+            <span className="text-primary mr-1">Tischler</span>Handwerk
           </Link>
 
           {/* Desktop Navigation */}
@@ -54,7 +54,7 @@ const Header = () => {
               <a 
                 key={item.name}
                 href={item.href}
-                className="text-wood-dark hover:text-[#6B8E23] transition-colors duration-300 px-2 py-1 font-medium"
+                className="text-foreground hover:text-primary transition-colors duration-300 px-2 py-1 font-medium"
               >
                 {item.name}
               </a>
@@ -65,7 +65,7 @@ const Header = () => {
           <div className="md:hidden">
             <button 
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="p-2 text-wood-dark focus:outline-none"
+              className="p-2 text-foreground focus:outline-none"
             >
               {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
@@ -74,13 +74,13 @@ const Header = () => {
 
         {/* Mobile Navigation */}
         {mobileMenuOpen && (
-          <div className="md:hidden bg-white shadow-lg animate-fade-in">
+          <div className="md:hidden bg-background shadow-lg animate-fade-in">
             <div className="container mx-auto py-2 px-4 flex flex-col space-y-3">
               {navItems.map((item) => (
                 <a
                   key={item.name}
                   href={item.href}
-                  className="text-wood-dark hover:text-[#6B8E23] py-2 font-medium border-b border-wood-light last:border-b-0"
+                  className="text-foreground hover:text-primary py-2 font-medium border-b border-muted last:border-b-0"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   {item.name}
@@ -98,14 +98,14 @@ const Header = () => {
           className="absolute inset-0 bg-cover bg-center"
           style={{ backgroundImage: `url(${heroImage})` }}
         >
-          <div className="absolute inset-0 bg-black bg-opacity-60"></div>
+          <div className="absolute inset-0 bg-black/60"></div>
         </div>
 
         {/* Hero content */}
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 py-20">
           <div className="max-w-2xl text-white">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-              Handwerkskunst aus <span className="text-[#6B8E23]">Lübeck</span>
+              Handwerkskunst aus <span className="text-primary">Lübeck</span>
             </h1>
             <p className="text-xl mb-8 text-gray-100">
               Maßgefertigte Möbel und hochwertige Innenausbauten 
@@ -113,12 +113,14 @@ const Header = () => {
             </p>
             <div className="flex flex-wrap gap-4">
               <a href="#contact">
-                <button className="btn-primary">
+                <Button variant="default" size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90">
                   Kostenloses Beratungsgespräch vereinbaren
-                </button>
+                </Button>
               </a>
-              <a href="#services" className="inline-flex items-center justify-center px-6 py-3 border-2 border-white text-white font-medium rounded-md transition-colors duration-300 hover:bg-white hover:text-wood-dark focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white">
-                Unsere Leistungen
+              <a href="#services">
+                <Button variant="outline" size="lg" className="border-2 border-white text-white hover:bg-white hover:text-foreground">
+                  Unsere Leistungen
+                </Button>
               </a>
             </div>
           </div>

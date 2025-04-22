@@ -1,7 +1,12 @@
-
 import { useState } from 'react';
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 import { ChevronLeft, ChevronRight, X } from 'lucide-react';
+import kueche from "@/assets/images/kueche.jpg";
+import einbauschrank from "@/assets/images/einbauschrank.png";
+import buecherregal from "@/assets/images/buecherregal.png";
+import badezimmer from "@/assets/images/badezimmer.jpg";
+import buero from "@/assets/images/buero.png";
+import sekretaer from "@/assets/images/sekretär.jpg";
 
 const Gallery = () => {
   const projects = [
@@ -9,42 +14,42 @@ const Gallery = () => {
       id: 1,
       title: "Maßgefertigte Küche",
       category: "Küchen",
-      image: "https://images.unsplash.com/photo-1556912173-3bb406ef7e8b?q=80&w=1470&auto=format&fit=crop",
+      image: kueche,
       description: "Moderne Einbauküche mit Massivholzarbeitsplatte und maßgefertigten Fronten."
     },
     {
       id: 2,
       title: "Einbauschrank",
       category: "Schränke",
-      image: "https://images.unsplash.com/photo-1595514535415-e351a0148f98?q=80&w=1374&auto=format&fit=crop",
+      image: einbauschrank,
       description: "Raumhoher Einbauschrank mit individueller Inneneinteilung nach Kundenwunsch."
     },
     {
       id: 3,
       title: "Bücherregal",
       category: "Wohnmöbel",
-      image: "https://images.unsplash.com/photo-1601591568068-df3c7625a420?q=80&w=1471&auto=format&fit=crop",
+      image: buecherregal,
       description: "Maßgefertigtes Bücherregal in Eiche massiv mit integrierten LED-Leuchten."
     },
     {
       id: 4,
       title: "Restaurierter Sekretär",
       category: "Restauration",
-      image: "https://images.unsplash.com/photo-1591129841117-3adfd313e34f?q=80&w=1374&auto=format&fit=crop",
+      image: sekretaer,
       description: "Fachgerecht restaurierter antiker Sekretär aus dem frühen 19. Jahrhundert."
     },
     {
       id: 5,
       title: "Badmöbel",
       category: "Badezimmer",
-      image: "https://images.unsplash.com/photo-1631889993959-41b4e9c6e3c5?q=80&w=1471&auto=format&fit=crop",
+      image: badezimmer,
       description: "Waschtischunterschrank und Hochschrank mit wasserfesten Oberflächen."
     },
     {
       id: 6,
       title: "Büroeinrichtung",
       category: "Objekteinrichtung",
-      image: "https://images.unsplash.com/photo-1600494448655-ae58f58bb945?q=80&w=1470&auto=format&fit=crop",
+      image: buero,
       description: "Komplette Büroeinrichtung mit Schreibtisch, Regalen und Aktenschränken."
     }
   ];
@@ -92,8 +97,8 @@ const Gallery = () => {
               key={category}
               className={`px-4 py-2 rounded-full transition-all ${
                 filter === category 
-                  ? 'bg-green-DEFAULT text-white' 
-                  : 'bg-white text-wood-dark hover:bg-green-light'
+                  ? 'bg-primary text-primary-foreground' 
+                  : 'bg-background text-foreground hover:bg-muted'
               }`}
               onClick={() => setFilter(category)}
             >
