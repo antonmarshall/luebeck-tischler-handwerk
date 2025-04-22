@@ -5,7 +5,7 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base: process.env.BASE_URL || '/luebeck-tischler-handwerk/',
+  base: '/luebeck-tischler-handwerk/', // Project Site base URL
   server: {
     host: "::",
     port: 8080,
