@@ -119,7 +119,7 @@ const Header = () => {
                   <Button 
                     variant="default" 
                     size="lg" 
-                    className="bg-green-600 text-white hover:bg-green-700 shadow-lg transition-all duration-300"
+                    className="bg-primary text-primary-foreground hover:bg-primary/90 shadow-lg transition-all duration-300"
                   >
                     Kostenloses Beratungsgespräch vereinbaren
                   </Button>
@@ -128,7 +128,7 @@ const Header = () => {
                   <Button 
                     variant="outline" 
                     size="lg" 
-                    className="border-2 border-green-600 text-green-600 bg-white hover:bg-green-50 shadow-lg transition-all duration-300"
+                    className="border-2 border-primary text-primary bg-white/90 hover:bg-white shadow-lg transition-all duration-300"
                   >
                     Unsere Leistungen
                   </Button>
