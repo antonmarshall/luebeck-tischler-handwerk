@@ -92,7 +92,7 @@ const Header = () => {
       </nav>
 
       {/* Hero Section */}
-      <div className="relative pt-24 min-h-screen flex items-center">
+      <div className="relative pt-24 h-[80vh] flex items-center">
         {/* Background image */}
         <div 
           className="absolute inset-0 bg-cover bg-center"
@@ -118,7 +118,7 @@ const Header = () => {
                 </Button>
               </a>
               <a href="#services">
-                <Button variant="outline" size="lg" className="border-2 border-white text-white hover:bg-white hover:text-gray-900">
+                <Button variant="outline" size="lg" className="border-2 border-white text-black bg-white hover:bg-transparent hover:text-white">
                   Unsere Leistungen
                 </Button>
               </a>
