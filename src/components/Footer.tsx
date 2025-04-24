@@ -45,17 +45,17 @@ const Footer = () => {
           </div>
           
           {/* Legal links */}
-          <div>
-            <h3 className="text-xl font-bold mb-4 text-gray-900">Rechtliches</h3>
+          <div className="bg-amber-50 p-6 rounded-lg shadow-sm">
+            <h3 className="text-xl font-bold mb-4 text-amber-800">Rechtliches</h3>
             <ul className="space-y-2">
               <li>
-                <Link to="/impressum" className="text-gray-700 hover:text-primary transition-colors">Impressum</Link>
+                <Link to="/impressum" className="text-amber-700 hover:text-amber-900 transition-colors">Impressum</Link>
               </li>
               <li>
-                <Link to="/datenschutz" className="text-gray-700 hover:text-primary transition-colors">Datenschutzerklärung</Link>
+                <Link to="/datenschutz" className="text-amber-700 hover:text-amber-900 transition-colors">Datenschutzerklärung</Link>
               </li>
               <li>
-                <Link to="/agb" className="text-gray-700 hover:text-primary transition-colors">AGB</Link>
+                <Link to="/agb" className="text-amber-700 hover:text-amber-900 transition-colors">AGB</Link>
               </li>
             </ul>
           </div>
