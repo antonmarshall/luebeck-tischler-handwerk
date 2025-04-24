@@ -92,36 +92,37 @@ const Header = () => {
       </nav>
 
       {/* Hero Section */}
-      <div className="relative pt-24 h-[80vh] flex items-center">
+      <div className="relative h-screen">
         {/* Background image */}
-        <div 
-          className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url(${heroImage})` }}
-        >
-          {/* Removed the black overlay div */}
-        </div>
+        <img 
+          src={heroImage} 
+          alt="Tischlerhandwerk Weber" 
+          className="absolute inset-0 w-full h-full object-cover"
+        />
 
         {/* Hero content */}
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 py-20">
-          <div className="max-w-2xl text-white">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-              Handwerkskunst aus <span className="text-primary">Lübeck</span>
-            </h1>
-            <p className="text-xl mb-8 text-gray-100">
-              Maßgefertigte Möbel und hochwertige Innenausbauten 
-              von Ihrem Tischlermeister mit jahrzehntelanger Erfahrung.
-            </p>
-            <div className="flex flex-wrap gap-4">
-              <a href="#contact">
-                <Button variant="default" size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90">
-                  Kostenloses Beratungsgespräch vereinbaren
-                </Button>
-              </a>
-              <a href="#services">
-                <Button variant="outline" size="lg" className="border-2 border-white text-black bg-white hover:bg-transparent hover:text-white">
-                  Unsere Leistungen
-                </Button>
-              </a>
+        <div className="absolute inset-0 flex items-center">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="max-w-2xl">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight text-white drop-shadow-lg">
+                Handwerkskunst aus <span className="text-primary">Lübeck</span>
+              </h1>
+              <p className="text-xl mb-8 text-white drop-shadow-lg">
+                Maßgefertigte Möbel und hochwertige Innenausbauten 
+                von Ihrem Tischlermeister mit jahrzehntelanger Erfahrung.
+              </p>
+              <div className="flex flex-wrap gap-4">
+                <a href="#contact">
+                  <Button variant="default" size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90">
+                    Kostenloses Beratungsgespräch vereinbaren
+                  </Button>
+                </a>
+                <a href="#services">
+                  <Button variant="outline" size="lg" className="border-2 border-white text-white hover:bg-white/10">
+                    Unsere Leistungen
+                  </Button>
+                </a>
+              </div>
             </div>
           </div>
         </div>
