@@ -98,7 +98,7 @@ const Header = () => {
           className="absolute inset-0 bg-cover bg-center"
           style={{ backgroundImage: `url(${heroImage})` }}
         >
-          <div className="absolute inset-0 bg-black/60"></div>
+          {/* Removed the black overlay div */}
         </div>
 
         {/* Hero content */}
