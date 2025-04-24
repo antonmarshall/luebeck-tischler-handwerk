@@ -93,12 +93,15 @@ const Header = () => {
 
       {/* Hero Section */}
       <div className="relative h-screen">
-        {/* Background image */}
-        <img 
-          src={heroImage} 
-          alt="Tischlerhandwerk Weber" 
-          className="absolute inset-0 w-full h-full object-cover"
-        />
+        {/* Background image with overlay */}
+        <div className="absolute inset-0">
+          <img 
+            src={heroImage} 
+            alt="Tischlerhandwerk Weber" 
+            className="absolute inset-0 w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-black/50"></div>
+        </div>
 
         {/* Hero content */}
         <div className="absolute inset-0 flex items-center">
