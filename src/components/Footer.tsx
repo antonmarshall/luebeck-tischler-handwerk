@@ -1,4 +1,3 @@
-
 import { Link } from 'react-router-dom';
 import { Heart } from 'lucide-react';
 
@@ -6,7 +5,7 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
   
   return (
-    <footer className="bg-wood-dark text-white">
+    <footer className="bg-gray-900 text-white">
       {/* Main footer content */}
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -28,19 +27,19 @@ const Footer = () => {
             <h3 className="text-xl font-bold mb-4">Schnelllinks</h3>
             <ul className="space-y-2">
               <li>
-                <a href="#home" className="hover:text-green-light transition-colors">Startseite</a>
+                <a href="#home" className="hover:text-primary transition-colors">Startseite</a>
               </li>
               <li>
-                <a href="#services" className="hover:text-green-light transition-colors">Unsere Leistungen</a>
+                <a href="#services" className="hover:text-primary transition-colors">Unsere Leistungen</a>
               </li>
               <li>
-                <a href="#gallery" className="hover:text-green-light transition-colors">Referenzen</a>
+                <a href="#gallery" className="hover:text-primary transition-colors">Referenzen</a>
               </li>
               <li>
-                <a href="#about" className="hover:text-green-light transition-colors">Über uns</a>
+                <a href="#about" className="hover:text-primary transition-colors">Über uns</a>
               </li>
               <li>
-                <a href="#contact" className="hover:text-green-light transition-colors">Kontakt</a>
+                <a href="#contact" className="hover:text-primary transition-colors">Kontakt</a>
               </li>
             </ul>
           </div>
@@ -50,13 +49,13 @@ const Footer = () => {
             <h3 className="text-xl font-bold mb-4">Rechtliches</h3>
             <ul className="space-y-2">
               <li>
-                <Link to="/impressum" className="hover:text-green-light transition-colors">Impressum</Link>
+                <Link to="/impressum" className="hover:text-primary transition-colors">Impressum</Link>
               </li>
               <li>
-                <Link to="/datenschutz" className="hover:text-green-light transition-colors">Datenschutzerklärung</Link>
+                <Link to="/datenschutz" className="hover:text-primary transition-colors">Datenschutzerklärung</Link>
               </li>
               <li>
-                <Link to="/agb" className="hover:text-green-light transition-colors">AGB</Link>
+                <Link to="/agb" className="hover:text-primary transition-colors">AGB</Link>
               </li>
             </ul>
           </div>
@@ -64,7 +63,7 @@ const Footer = () => {
       </div>
       
       {/* Copyright bar */}
-      <div className="bg-black bg-opacity-20 py-4">
+      <div className="bg-black py-4">
         <div className="container mx-auto px-4 text-center text-gray-300 text-sm">
           © {currentYear} Tischlerhandwerk Weber. Alle Rechte vorbehalten.
         </div>
