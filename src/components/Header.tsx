@@ -104,7 +104,7 @@ const Header = () => {
         </div>
 
         {/* Hero content */}
-        <div className="absolute inset-0 flex items-center">
+        <div className="absolute inset-0 flex items-center z-10">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-2xl">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight text-white drop-shadow-lg">
@@ -115,13 +115,21 @@ const Header = () => {
                 von Ihrem Tischlermeister mit jahrzehntelanger Erfahrung.
               </p>
               <div className="flex flex-wrap gap-4">
-                <a href="#contact">
-                  <Button variant="default" size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90">
+                <a href="#contact" className="relative z-20">
+                  <Button 
+                    variant="default" 
+                    size="lg" 
+                    className="bg-primary text-primary-foreground hover:bg-primary/90 shadow-lg transition-all duration-300"
+                  >
                     Kostenloses Beratungsgespräch vereinbaren
                   </Button>
                 </a>
-                <a href="#services">
-                  <Button variant="outline" size="lg" className="border-2 border-white text-white bg-black/40 hover:bg-black/60 backdrop-blur-sm">
+                <a href="#services" className="relative z-20">
+                  <Button 
+                    variant="outline" 
+                    size="lg" 
+                    className="border-2 border-white text-white bg-black/40 hover:bg-black/60 backdrop-blur-sm shadow-lg transition-all duration-300"
+                  >
                     Unsere Leistungen
                   </Button>
                 </a>
